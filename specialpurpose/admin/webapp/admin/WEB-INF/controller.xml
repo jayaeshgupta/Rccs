@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site-conf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://ofbiz.apache.org/Site-Conf" xsi:schemaLocation="http://ofbiz.apache.org/Site-Conf http://ofbiz.apache.org/dtds/site-conf.xsd">
+    <!-- The controller elements that are common to all OFBiz components
+         can be found in the following xml file. A component can override the
+         elements found in the common-controller.xml file. -->
+   
+    <include location="component://common/webcommon/WEB-INF/common-controller.xml"/>
+
+    <description>Admin Component Site Configuration File</description>
+
+    <!-- Events to run on every request before security (chains exempt) -->
+    <!--
+    <preprocessor>
+    </preprocessor>
+    -->
+    <!-- Events to run on every request after all other processing (chains exempt) -->
+    <!--
+    <postprocessor>
+        <event name="test" type="java" path="org.apache.ofbiz.webapp.event.TestEvent" invoke="test"/>
+    </postprocessor>
+    -->
+
+    <!-- Request Mappings -->
+    <request-map uri="main"><security https="true" auth="true"/><response name="success" type="view" value="main"/></request-map>
+    
+    <!-- Jayaesh  first Request Mappings for CSS --> 
+    <request-map uri="role">
+		<security https="true" auth="true" />
+		<response name="success" type="view" value="role" />
+		<response name="error" type="view" value="role" />
+	</request-map>
+    
+    <request-map uri="previlege">
+		<security https="true" auth="true" />
+		<response name="success" type="view" value="rolePrevilege" />
+		<response name="error" type="view" value="rolePrevilege" />
+	</request-map>
+    <request-map uri="addProject">
+		<security https="true" auth="true" />
+		<response name="success" type="view" value="addProject" />
+		<response name="error" type="view" value="addProject" />
+	</request-map>
+	
+	 
+	  <request-map uri="addProjectType">
+   		 <security https="true" auth="true"/>
+    	 <event type="service" invoke="addProjectTypeBOM"/>
+    	<response name="success" type="view" value="addProject"/>
+    	<response name="error" type="view" value="addProject"/>
+    </request-map>
+    
+    <!--  <request-map uri="addProjectType" edit="false">
+        <description>Verify a user is logged in.</description>
+        <security https="true" auth="false"/>
+        <event type="java" path="org.egov.adminccsys.adminccsysService"   invoke="addProjectTypess" />
+        <response name="success" type="view" value="addProject"/>
+        <response name="error" type="view" value="addProject"/>
+    </request-map>  -->
+    
+    
+    
+	
+    <!-- View Mappings -->
+    <view-map name="main" type="screen" page="component://admin/widget/AdminScreens.xml#main"/>
+     <view-map name="role" type="screen" page="component://admin/widget/AdminScreens.xml#role"/>
+     <view-map name="rolePrevilege" type="screen" page="component://admin/widget/AdminScreens.xml#rolePrevilege"/>
+      <view-map name="addProject" type="screen" page="component://admin/widget/AdminScreens.xml#addProject"/>
+</site-conf>

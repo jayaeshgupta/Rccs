@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screens xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://ofbiz.apache.org/Widget-Screen" xsi:schemaLocation="http://ofbiz.apache.org/Widget-Screen http://ofbiz.apache.org/dtds/widget-screen.xsd">
+
+    <screen name="main">
+        <section>
+            <actions>
+                <set field="headerItem" value="main"/><!-- this highlights the selected menu-item with name "main" -->
+                <set field="layoutSettings.styleSheets[+0]" value="/images/css/basic_components.css" global="true" />
+               <!--  <set field="layoutSettings.styleSheets[+0]" value="/images/css/bootstrap-rtl.css" global="true" /> -->
+               <!--  <set field="layoutSettings.styleSheets[+0]" value="/images/css/bootstrap-rtl.min.css" global="true" /> -->
+                <set field="layoutSettings.styleSheets[+0]" value="/images/css/bootstrap.min.css" global="true" />
+                <!-- <set field="layoutSettings.styleSheets[+0]" value="/images/css/custom-rtl.css" global="true" /> -->
+                <set field="layoutSettings.styleSheets[+0]" value="/images/css/custom.css" global="true" />
+                <set field="layoutSettings.styleSheets[+0]" value="/images/css/googleFont.css" global="true" />
+                <set field="layoutSettings.styleSheets[+0]" value="/images/css/media.css" global="true" />
+                <set field="layoutSettings.styleSheets[+0]" value="/images/css/style.css" global="true" />
+                
+            </actions>
+            <widgets>
+               <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    
+                    <decorator-section name="left-column">
+                        <include-screen name="leftbar"/>
+                    </decorator-section>                    
+                    <decorator-section name="body">
+                      <platform-specific>
+							<html>
+								<html-template location="component://CommitmentSystem/webapp/CommitmentSystem/ccsys/dashboard.ftl" />
+								
+							</html>
+						</platform-specific>
+                    </decorator-section>
+                </decorator-screen>
+                   
+            </widgets>
+        </section>
+    </screen>
+     <screen name="leftbar">
+        <section>
+            <widgets>
+                <include-screen name="keywordsearchbox"/>
+            </widgets>
+        </section>
+    </screen>
+    <screen name="keywordsearchbox">
+        <section>
+            <actions>
+            </actions>
+            <widgets>
+                    <platform-specific>
+                         <html><html-template location="component://admin/webapp/admin/ccsysAdmin/sideMenuPanel.ftl"/></html>
+                         </platform-specific>
+                    </widgets>
+        </section>
+    </screen>
+    
+    <screen name="projectList">
+        <section>
+            <actions>
+                <set field="headerItem" value="main"/><!-- this highlights the selected menu-item with name "main" -->
+            </actions>
+            <widgets>
+                <decorator-screen name="CommitmentSystemCommonDecorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                    </decorator-section>
+                </decorator-screen>
+                <platform-specific>
+				 <html>
+					 <html-template
+						 location="component://CommitmentSystem/webapp/CommitmentSystem/ccsys/allProject.ftl" />
+					 <html-template
+						 location="component://CommitmentSystem/webapp/CommitmentSystem/ccsys/Projectlist.ftl" />
+					 </html>
+				 </platform-specific>
+            </widgets>
+        </section>
+    </screen>
+    <screen name="RegisterNewProject">
+        <section>
+            <actions>
+                <set field="headerItem" value="main"/><!-- this highlights the selected menu-item with name "main" -->
+            </actions>
+            <widgets>
+                <decorator-screen name="CommitmentSystemCommonDecorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                    </decorator-section>
+                </decorator-screen>
+                <platform-specific>
+                
+				 <html>
+					 <html-template
+						 location="component://CommitmentSystem/webapp/CommitmentSystem/ccsys/createProject.ftl" />
+					  
+					 </html>
+				 </platform-specific>
+            </widgets>
+        </section>
+    </screen>
+     <screen name="projectApproval">
+        <section>
+            <actions>
+                <set field="headerItem" value="main"/><!-- this highlights the selected menu-item with name "main" -->
+            </actions>
+            <widgets>
+                <decorator-screen name="CommitmentSystemCommonDecorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                    </decorator-section>
+                </decorator-screen>
+                <platform-specific>
+				 <html>
+					 <html-template
+						 location="component://CommitmentSystem/webapp/CommitmentSystem/ccsys/findProjectsApproval.ftl" />
+					 <html-template
+						 location="component://CommitmentSystem/webapp/CommitmentSystem/ccsys/ProjectlistApproval.ftl" />
+					 </html>
+				 </platform-specific>
+            </widgets>
+        </section>
+    </screen>
+</screens>

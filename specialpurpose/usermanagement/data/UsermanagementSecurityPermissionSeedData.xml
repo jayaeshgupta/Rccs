@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-engine-xml>
+    
+<RoleType roleTypeId="RCC-CODE" parentTypeId=""  description="This is code of RCC"/>
+<RoleType roleTypeId="DEPT-ASSGN" parentTypeId="RCC-CODE"  description="Departmental Assignment"/>
+<RoleType roleTypeId="ORG-ASSGN" parentTypeId="RCC-CODE"  description="Organization Assignment"/>
+<RoleType roleTypeId="GRP-ASSGN" parentTypeId="RCC-CODE"  description="Group Assignment"/>
+<RoleType roleTypeId="INDVl-ASG-RESBLY" parentTypeId="RCC-CODE"  description="Individual Assigned "/>
+<RoleType roleTypeId="PRG-RESBLY" parentTypeId="RCC-CODE"  description=" Program Responsible"/>
+<RoleType roleTypeId="DST-RESBLY" parentTypeId="RCC-CODE"  description="District Responsible"/>
+<RoleType roleTypeId="SPR-RESBLY" parentTypeId="RCC-CODE"  description="Supervisor Responsible"/>
+
+<Party partyId="100010000"  lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<Party partyId="100110000"  lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<Party partyId="100210000"  lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<Party partyId="100310000"  lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<Party partyId="100410000"  lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<Party partyId="100510000"  lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<Party partyId="100610000"  lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<Party partyId="100710000"  lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+
+<Party partyId="101110000"  lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<Party partyId="101210000"  lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<Party partyId="102110000"  lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<Party partyId="102210000"  lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+
+
+
+
+<PartyGroup partyId="100010000" groupName="Executive Engineer"  lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<PartyGroup partyId="100110000" groupName="Superintendent Engineer"  lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<PartyGroup partyId="100210000" groupName="Chief Engineer"  lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<PartyGroup partyId="100310000" groupName="Principal Secretary"  lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<PartyGroup partyId="100410000" groupName="Department Minister"  lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<PartyGroup partyId="100510000" groupName="Finance Department"  lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<PartyGroup partyId="100610000" groupName="Department Head"  lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<PartyGroup partyId="100710000" groupName="Principal Secretary"  lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<PartyGroup partyId="101110000" groupName="Department Officer/DDO"  lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<PartyGroup partyId="101210000" groupName="Head of Department /Budget Controls officer"  lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<PartyGroup partyId="102110000" groupName="Department Officer"  lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<PartyGroup partyId="102210000" groupName="Department of local bodies"  lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+ 
+<Office officeId="1000" officeName="O/o Line Department of Facilities And Member" parentOfficeId="1000" officeType="CP"    partyId="100010000"    lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<Office officeId="1001" officeName="O/o Directorate of Facilities" parentOfficeId="1000" officeType="CP"    partyId="100110000"    lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<Office officeId="1002" officeName="O/o Ministry of Facilities" parentOfficeId="1000" officeType="CP"   partyId="100210000"   lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<Office officeId="1003" officeName="O/o Finance Department of Facilities" parentOfficeId="1000" officeType="CP"    partyId="100310000"    lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+ 
+
+<!--Start 02March -->
+
+<UserLogin userLoginId="EE" currentPassword="$SHA$mCGGJO$F5W2rtawIkczT0lNjgKTSrDa0F4" partyId="462710000" lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<UserLogin userLoginId="SE" currentPassword="$SHA$2XP$LLByMwgRD3DJ1KnaoP5ayHkSbs0" partyId="424810000" lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<UserLogin userLoginId="CE" currentPassword="$SHA$LfWIy79nMkcP9N$x4xLRDTz97wVblik6PX4ZVPYAhU" partyId="500110000" lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<UserLogin userLoginId="PRS" currentPassword="$SHA$mCGGJO$F5W2rtawIkczT0lNjgKTSrDa0F4" partyId="569810000" lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<UserLogin userLoginId="DH" currentPassword="$SHA$LfWIy79nMkcP9N$x4xLRDTz97wVblik6PX4ZVPYAhU" partyId="411510000" lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<UserLogin userLoginId="DDO" currentPassword="$SHA$LfWIy79nMkcP9N$x4xLRDTz97wVblik6PX4ZVPYAhU" partyId="402610000" lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<UserLogin userLoginId="FINDEP" currentPassword="$SHA$LfWIy79nMkcP9N$x4xLRDTz97wVblik6PX4ZVPYAhU" partyId="100310000" lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<UserLogin userLoginId="HOD" currentPassword="$SHA$LfWIy79nMkcP9N$x4xLRDTz97wVblik6PX4ZVPYAhU" partyId="402610000" lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<UserLogin userLoginId="DO" currentPassword="$SHA$LfWIy79nMkcP9N$x4xLRDTz97wVblik6PX4ZVPYAhU" partyId="500110000" lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<UserLogin userLoginId="DOLB" currentPassword="$SHA$LfWIy79nMkcP9N$x4xLRDTz97wVblik6PX4ZVPYAhU" partyId="100310000" lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+
+
+<UserLoginSecurityGroup userLoginId="AE" groupId="SECTION_USER" fromDate="2018-05-20 11:45:31.928" lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<UserLoginSecurityGroup userLoginId="AEE" groupId="SUBDIV_USER" fromDate="2018-05-20 11:45:31.928" lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<UserLoginSecurityGroup userLoginId="EE" groupId="DIV_USER" fromDate="2018-05-20 11:45:31.928" lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<UserLoginSecurityGroup userLoginId="SE" groupId="CIRCLE_USER" fromDate="2018-05-20 11:45:31.928" lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<UserLoginSecurityGroup userLoginId="CE" groupId="MEMBER_USER" fromDate="2018-05-20 11:45:31.928" lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+  
+
+<UserLogin userLoginId="SE2026" currentPassword="$SHA$LfWIy79nMkcP9N$x4xLRDTz97wVblik6PX4ZVPYAhU" partyId="202610000" lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+
+<UserLoginSecurityGroup userLoginId="AE3501" groupId="SECTION_USER" fromDate="2018-05-20 11:45:31.928" lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<UserLoginSecurityGroup userLoginId="EE3502" groupId="DIV_USER" fromDate="2018-05-20 11:45:31.928" lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<UserLoginSecurityGroup userLoginId="EE3503" groupId="DIV_USER" fromDate="2018-05-20 11:45:31.928" lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<UserLoginSecurityGroup userLoginId="EE3506" groupId="DIV_USER" fromDate="2018-05-20 11:45:31.928" lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+
+<UserLoginSecurityGroup userLoginId="CE6583" groupId="MEMBER_USER" fromDate="2018-05-20 11:45:31.928" lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<UserLoginSecurityGroup userLoginId="CE6584" groupId="MEMBER_USER" fromDate="2018-05-20 11:45:31.928" lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+<UserLoginSecurityGroup userLoginId="cE6585" groupId="MEMBER_USER" fromDate="2018-05-20 11:45:31.928" lastUpdatedStamp="2018-05-20 11:45:31.928" lastUpdatedTxStamp="2018-05-20 11:45:31.928" createdStamp="2018-05-20 11:45:31.928" createdTxStamp="2018-05-20 11:45:31.928" />
+             
+ 
+
+<FinancialYear financialYear="2010-2011" prevfinancialYear="2009-2010" startDate="01-Apr-2010" endDate="31-Mar-2011"/>
+<FinancialYear financialYear="2011-2012" prevfinancialYear="2010-2011" startDate="01-Apr-2011" endDate="31-Mar-2012"/>
+<FinancialYear financialYear="2012-2013" prevfinancialYear="2011-2012" startDate="01-Apr-2012" endDate="31-Mar-2013"/>
+<FinancialYear financialYear="2013-2014" prevfinancialYear="2012-2013" startDate="01-Apr-2013" endDate="31-Mar-2014"/>
+<FinancialYear financialYear="2014-2015" prevfinancialYear="2013-2014" startDate="01-Apr-2014" endDate="31-Mar-2015"/>
+
+<FinancialYear financialYear="2015-2016" prevfinancialYear="2014-2015" startDate="01-Apr-2014" endDate="31-Mar-2015"/>
+<FinancialYear financialYear="2016-2017" prevfinancialYear="2015-2016" startDate="01-Apr-2015" endDate="31-Mar-2016"/>
+<FinancialYear financialYear="2017-2018" prevfinancialYear="2016-2017" startDate="01-Apr-2017" endDate="31-Mar-2018"/>
+<FinancialYear financialYear="2018-2019" prevfinancialYear="2017-2018" startDate="01-Apr-2018" endDate="31-Mar-2019"/>
+<FinancialYear financialYear="2019-2020" prevfinancialYear="2018-2019" startDate="01-Apr-2019" endDate="31-Mar-2020"/>
+ 
+ 
+ 
+<!--  
+<SecurityGroupPermission groupId="SECTION_USER" permissionId="MM_VIEW"/>  
+<SecurityGroupPermission groupId="SECTION_USER" permissionId="OFBTOOLS_VIEW"/>  
+ <SecurityGroupPermission groupId="SECTION_USER" permissionId="ASSETMAINT_ADMIN"/>  
+<SecurityGroupPermission groupId="DIV_USER" permissionId="MM_VIEW"/>  
+<SecurityGroupPermission groupId="DIV_USER" permissionId="OFBTOOLS_VIEW"/>  
+<SecurityGroupPermission groupId="DIV_USER" permissionId="ASSETMAINT_ADMIN"/>
+<SecurityGroupPermission groupId="SUBDIV_USER" permissionId="MM_VIEW"/>  
+<SecurityGroupPermission groupId="SUBDIV_USER" permissionId="OFBTOOLS_VIEW"/>  
+<SecurityGroupPermission groupId="SUBDIV_USER" permissionId="ASSETMAINT_ADMIN"/> 
+-->
+<!-- Event Type -->
+<EventType eventType="EDIT_ASSET" eventTypeDescription="Edit Asset" email="YES" sms="NO"/>
+<EventType eventType="CREATE_ASSET" eventTypeDescription="Create Asset" email="YES" sms="NO"/>
+
+
+
+<!-- Evnet type End -->
+<!-- Communication Template -->
+<CommunicationTemplate eventType="CREATE_ASSET" communicationType="Email" subject="Asset Created" 
+communicationmsg="Dear User,
+					The Asset has been created.Please see the details below, 
+
+"/>
+					
+<CommunicationTemplate eventType="EDIT_ASSET" communicationType="Email" subject="Asset Edited" 
+communicationmsg="Dear User,
+					The Project has been edited.Please see the details below, 
+
+"/>
+
+<TemporalExpression tempExprId="MIDNIGHT_DAILY" tempExprTypeId="FREQUENCY" description="Daily Midnight" date1="2000-01-01 00:00:00.000" integer1="5" integer2="1"/>
+<JobSandbox jobId="GET_CONSUMER_COUNT_FROM_GIS" jobName="Get Consumer Count From GIS" runTime="2000-01-01 00:00:00.000" serviceName="getConsumerCountFromGIS" poolId="pool" runAsUser="system" tempExprId="MIDNIGHT_DAILY" maxRecurrenceCount="-1" />
+
+</entity-engine-xml>
+
+    
+
+ 
