@@ -31,7 +31,7 @@ For more details about OFBiz please visit the OFBiz Documentation page:
 [OFBiz License](http://www.apache.org/licenses/LICENSE-2.0)
 
 System requirements
--------------------
+-------------
 
 The only requirement to run OFBiz is to have the Java Development Kit (JDK) 
 version 8 installed on your system (not just the JRE, but the full JDK) which
