@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ofbiz.apache.org/Widget-Menu" xsi:schemaLocation="http://ofbiz.apache.org/Widget-Menu http://ofbiz.apache.org/dtds/widget-menu.xsd">
+    <menu name="MainAppBar" title="${uiLabelMap.CommitmentSystemApplication}" extends="CommonAppBarMenu" extends-resource="component://common/widget/CommonMenus.xml">
+           <menu-item name="main" title="${uiLabelMap.CommonMain}"><link target="main"/></menu-item>
+           <menu-item name="projectList" title="All Projects"><link target="projectList"/></menu-item>
+           <menu-item name="projectRegister" title="Project Registration"><link target="RegisterNewProject"/></menu-item>
+           <menu-item name="projectApproval" title="Project Approval"><link target="projectApproval"/></menu-item>
+    </menu>
+</menus>

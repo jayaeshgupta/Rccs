@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screens xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://ofbiz.apache.org/Widget-Screen" xsi:schemaLocation="http://ofbiz.apache.org/Widget-Screen http://ofbiz.apache.org/dtds/widget-screen.xsd">
+
+    <screen name="main">
+        <section>
+            <actions>
+                <set field="headerItem" value="Dashboard"/>
+                <set field="MainAppBar" value="MainAppBar"/>
+                 <set field="layoutSettings.styleSheets[+0]" value="/images/css/batch.css" global="true" />
+                 
+               <!-- this highlights the selected menu-item with name "main" -->
+            </actions>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="left-column">
+                        <include-screen name="leftbar"/>
+                    </decorator-section>                    
+                    <decorator-section name="body">
+                      <platform-specific>
+							<html>
+								<html-template location="component://usermanagement/webapp/usermanagement/usermanagement/usermanagementDashbord.ftl" />
+								
+							</html>
+						</platform-specific>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+ <screen name="leftbar">
+        <section>
+         <actions>
+              
+            </actions>
+            <widgets>
+                <include-screen name="keywordsearchbox"/>
+            </widgets>
+        </section>
+    </screen>
+    <screen name="keywordsearchbox">
+        <section>
+            <actions>
+               <set field="layoutSettings.styleSheets[+0]" value="/images/css/batch.css" global="true" />
+               <set field="layoutSettings.styleSheets[+0]" value="/images/css/colors.css" global="true" />
+            </actions>
+            <widgets>
+               
+                    <platform-specific>
+                         <html><html-template location="component://usermanagement/webapp/usermanagement/usermanagement/sideMenuUserPanel.ftl"/></html>
+                         </platform-specific>
+                    </widgets>
+        </section>
+    </screen>
+    
+    <screen name="userlist">
+        <section>
+            <actions>
+                <set field="headerItem" value="Dashboard"/>
+                <set field="MainAppBar" value="MainAppBar"/>
+                
+               <!-- this highlights the selected menu-item with name "main" -->
+            </actions>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="left-column">
+                        <include-screen name="leftbar"/>
+                    </decorator-section>                    
+                    <decorator-section name="body">
+                      <platform-specific>
+							<html>
+								<html-template location="component://usermanagement/webapp/usermanagement/usermanagement/ccUserlist.ftl" />
+								
+							</html>
+						</platform-specific>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+     <screen name="createUser">
+        <section>
+            <actions>
+                <set field="headerItem" value="Dashboard"/>
+                <set field="MainAppBar" value="MainAppBar"/>
+                
+               <!-- this highlights the selected menu-item with name "main" -->
+            </actions>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="left-column">
+                        <include-screen name="leftbar"/>
+                    </decorator-section>                    
+                    <decorator-section name="body">
+                      <platform-specific>
+							<html>
+								<html-template location="component://usermanagement/webapp/usermanagement/usermanagement/ccCreateUser.ftl" />
+								
+							</html>
+						</platform-specific>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+</screens>

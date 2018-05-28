@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entitymodel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/entitymodel.xsd">
+    <!-- ========================================================= -->
+    <!-- ======================== Defaults ======================= -->
+    <!-- ========================================================= -->
+    <title>Entity of Admin Component</title>
+    <description>None</description>
+    <copyright></copyright>
+    <version></version>
+
+
+<!-- To display the Project type from database name-Project Type -->	
+	<!-- Added by Jayaesh Gupta -->	
+	 
+	<entity entity-name="ProjectTypeCcsys"
+ 			package-name="org.ofbiz.admin" title="Project Type">
+ 			
+ 			<field name="sequenceId" type="id-ne"/>
+ 			<field name="projectId" type="id-ne"/>
+ 			<field name="projectType" type="long-varchar"/>
+ 			<field name="projectSubTypeId" type="short-varchar"/>
+ 			<field name="projectSubTypeName" type="short-varchar"/>
+ 			<field name="projectCast" type="short-varchar"/>
+ 			<field name="description" type="short-varchar"/>
+ 			<field name="createdBY" type="short-varchar"/>
+ 			
+ 			<prim-key field="projectId"/>
+ 			 
+ 	</entity>
+
+
+
+
+
+
+
+</entitymodel>
